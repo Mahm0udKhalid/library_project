@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+nav:hover{
+  opacity: 0.9;
+  box-shadow: 0 3px rgb(40, 72, 102); ;
+}
+
+
+.logo{
+  color: rgb(139, 165, 187);
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 60px;
+  font-weight: bold;
+  transition: 0.5s;
+ }
+ 
+ .logo:hover{
+   color: white;
+   font-size: 2.5em;
+   line-height: 75px;
+   padding: 0 60px;
+   font-weight: bold;
+  }
+ 
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: rgb(229, 238, 233);
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border: 1px solid #e9e775;
+  background: #2c3e50;
+  border-radius: 5px;
+  font-weight: 300px;
+}
+/*missed here*/
+a:hover {
+  background: #1b9bff;
+  transition: 0.7s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media(max-width: 952px) {
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+   nav ul li a{
+     font-size: 16px;
+   }
+}
+@media(max-width: 858px) {
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+} 
+
+body, html {
+   height: 100%;
+   margin: 0;
+}
+
+header{
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #2c3e50;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(40, 72, 102);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 35px;
+  margin: auto;
+  padding: 5px;
+  color: rgb(110, 137, 148);
+  transition: 0.7s;
+  transition-delay: 0.1s;
+}
+
+header:hover{
+  /* margin-top: 3px; */
+  color: black;
+  padding: 7px;
+  background-color: rgb(81, 118, 161);
+  text-shadow: 1px 1px #2c3e50;
+}
+
+h1{
+  text-align: left;
+  margin: 20px 7px 5px 0;
+}
+p{
+  padding: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.parent{
+  margin: 0px 0 20px;
+  opacity: 0.8;
+  background-image: linear-gradient(to bottom right, rgb(21, 95, 180), rgb(152, 213, 221));
+  padding: 15px
+  ;
+}
