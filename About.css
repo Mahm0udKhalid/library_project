@@ -226,3 +226,27 @@ p{
   margin: 0px 3px;
   display: block;
 }
+
+
+@media (max-width:600px){
+  
+  /* contact info */
+
+.contact{
+ 
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: auto;
+  display: inline-block;
+  display: flex;
+  overflow: hidden;
+  /* justify-content: space-evenly; */
+}
+
+.contact div div{
+  display: block;
+  
+}
+
+}
